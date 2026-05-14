@@ -62,91 +62,43 @@ export default function Categories() {
                 <p className="text-zinc-400 mb-8">Whether you`re looking for a comedy to make you laugh, a drama to make you think, or a documentary to learn something new</p>
             </div>
 
-            <div className="bg-zinc-900 gap-2 flex items-center rounded-lg">
-                <button onClick={() => setPage(page - 1)} disabled={page === 0}>←</button>
-                <div className="w-px h-6 bg-red-600" />
-                <button onClick={() => setPage(page + 1)} disabled={page * perPage + perPage >= categories.length}>→</button>
-            </div>
+                <div className="flex items-center gap-2 bg-zinc-900 p-2 rounded-lg">
+                    <button
+                        onClick={() => setPage(page - 1)}
+                        disabled={page === 0}
+                        className="bg-zinc-800 text-white px-4 py-2 rounded-lg hover:bg-zinc-700 disabled:opacity-30"
+                    >←</button>
+
+                    {/* Индикатор страниц */}
+                    <div className="flex gap-1 px-2">
+                        {Array.from({ length: Math.ceil(categories.length / perPage) }).map((_, i) => (
+                            <div key={i} className={`h-1 w-6 rounded-full ${i === page ? 'bg-red-600' : 'bg-zinc-700'}`} />
+                        ))}
+                    </div>
+
+                    <button
+                        onClick={() => setPage(page + 1)}
+                        disabled={page * perPage + perPage >= categories.length}
+                        className="bg-zinc-800 text-white px-4 py-2 rounded-lg hover:bg-zinc-700 disabled:opacity-30"
+                    >→</button>
+                </div>
 
             </div>
 
             <div className="grid grid-cols-5 gap-4 mt-6">
-
-            <div className="bg-zinc-900 rounded-xl p-4">
-
-                <div className="grid grid-cols-2 gap-1 mb-4">
-                    <img src="https://www.themoviedb.org/t/p/w600_and_h900_face/iQ5ztdjvteGeboxtmRdXEChJOHh.jpg" className="rounded-lg w-full h-28 object-cover" />
-                    <img src="https://www.themoviedb.org/t/p/w600_and_h900_face/buPFnHZ3xQy6vZEHxbHgL1Pc6CR.jpg" className="rounded-lg w-full h-28 object-cover" />
-                    <img src="https://www.themoviedb.org/t/p/w600_and_h900_face/aOIuZAjPaRIE6CMzbazvcHuHXDc.jpg" className="rounded-lg w-full h-28 object-cover" />
-                    <img src="https://www.themoviedb.org/t/p/w600_and_h900_face/n0YuM4f5lvGAP6MAW2kBIzugXnc.jpg" className="rounded-lg w-full h-28 object-cover" />
-                </div>
-
-                <div className="flex justify-between text-white">
-                    <span>Action</span>
-                    <span>→</span>
-                </div>
-            </div>
-
-                <div className="bg-zinc-900 rounded-xl p-4">
-
-                    <div className="grid grid-cols-2 gap-1 mb-4">
-                        <img src="https://www.themoviedb.org/t/p/w600_and_h900_face/yQvGrMoipbRoddT0ZR8tPoR7NfX.jpg" className="rounded-lg w-full h-28 object-cover" />
-                        <img src="https://www.themoviedb.org/t/p/w600_and_h900_face/kDp1vUBnMpe8ak4rjgl3cLELqjU.jpg" className="rounded-lg w-full h-28 object-cover" />
-                        <img src="https://www.themoviedb.org/t/p/w600_and_h900_face/wuMc08IPKEatf9rnMNXvIDxqP4W.jpg" className="rounded-lg w-full h-28 object-cover" />
-                        <img src="https://www.themoviedb.org/t/p/w600_and_h900_face/5VTN0pR8gcqV3EPUHHfMGnJYN9L.jpg" className="rounded-lg w-full h-28 object-cover" />
+                {visible.map((category, index) => (
+                    <div key={index} className="bg-zinc-900 rounded-xl p-4">
+                        <div className="grid grid-cols-2 gap-1 mb-4">
+                            {category.posters.map((url, i) => (
+                                <img key={i} src={url} className="rounded-lg w-full h-28 object-cover" />
+                            ))}
+                        </div>
+                        <div className="flex justify-between text-white">
+                            <span>{category.name}</span>
+                            <span>→</span>
+                        </div>
                     </div>
-
-                    <div className="flex justify-between text-white">
-                        <span>Adventure</span>
-                        <span>→</span>
-                    </div>
-                </div>
-
-                <div className="bg-zinc-900 rounded-xl p-4">
-
-                    <div className="grid grid-cols-2 gap-1 mb-4">
-                        <img src="https://www.themoviedb.org/t/p/w600_and_h900_face/38C91I7Xft0gyY7BITm8i4yvuRb.jpg" className="rounded-lg w-full h-28 object-cover" />
-                        <img src="https://www.themoviedb.org/t/p/w600_and_h900_face/Cw4hIUIAmSYfK9QfaUW5igp9La.jpg" className="rounded-lg w-full h-28 object-cover" />
-                        <img src="https://www.themoviedb.org/t/p/w600_and_h900_face/1QU7HKgsQbGpzsJbJK4pAVQV9F5.jpg" className="rounded-lg w-full h-28 object-cover" />
-                        <img src="https://www.themoviedb.org/t/p/w600_and_h900_face/fVQFPRuw3yWXojYDJvA5EoFjUOY.jpg" className="rounded-lg w-full h-28 object-cover" />
-                    </div>
-
-                    <div className="flex justify-between text-white">
-                        <span>Comedy</span>
-                        <span>→</span>
-                    </div>
-                </div>
-
-                <div className="bg-zinc-900 rounded-xl p-4">
-
-                    <div className="grid grid-cols-2 gap-1 mb-4">
-                        <img src="https://www.themoviedb.org/t/p/w600_and_h900_face/fnOMP6mjmOmZwmlC1n0K7ivrzt1.jpg" className="rounded-lg w-full h-28 object-cover" />
-                        <img src="https://www.themoviedb.org/t/p/w600_and_h900_face/7BsvSuDQuoqhWmU2fL7W2GOcZHU.jpg" className="rounded-lg w-full h-28 object-cover" />
-                        <img src="https://www.themoviedb.org/t/p/w600_and_h900_face/tuFaWiqX0TXoWu7DGNcmX3UW7sT.jpg" className="rounded-lg w-full h-28 object-cover" />
-                        <img src="https://www.themoviedb.org/t/p/w600_and_h900_face/rNaBe4TwbMef71sgscqabpGKsxh.jpg" className="rounded-lg w-full h-28 object-cover" />
-                    </div>
-
-                    <div className="flex justify-between text-white">
-                        <span>Drama</span>
-                        <span>→</span>
-                    </div>
-                </div>
-
-                <div className="bg-zinc-900 rounded-xl p-4">
-
-                    <div className="grid grid-cols-2 gap-1 mb-4">
-                        <img src="https://www.themoviedb.org/t/p/w600_and_h900_face/9E2y5Q7WlCVNEhP5GiVTjhEhx1o.jpg" className="rounded-lg w-full h-28 object-cover" />
-                        <img src="https://www.themoviedb.org/t/p/w600_and_h900_face/mjkS2iAgWj3ik1DTjvI15nHZ7yl.jpg" className="rounded-lg w-full h-28 object-cover" />
-                        <img src="https://www.themoviedb.org/t/p/w600_and_h900_face/kK1BGkG3KAvWB0WMV1DfOx9yTMZ.jpg" className="rounded-lg w-full h-28 object-cover" />
-                        <img src="https://www.themoviedb.org/t/p/w600_and_h900_face/vNVFt6dtcqnI7hqa6LFBUibuFiw.jpg" className="rounded-lg w-full h-28 object-cover" />
-                    </div>
-
-                    <div className="flex justify-between text-white">
-                        <span>Horror</span>
-                        <span>→</span>
-                    </div>
-                </div>
-
+                ))}
             </div>
         </div>
     )
