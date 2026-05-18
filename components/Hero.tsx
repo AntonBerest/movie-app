@@ -33,7 +33,7 @@ export default function Hero() {
         ))}
       </div>
 
-      <div className="absolute inset-0 bg-black-60" />
+      <div className="absolute inset-0 bg-gradient-to-t bg-black-60" />
 
       <div className="absolute inset-0 flex flex-col items-center justify-end pb-24 text-white text-center px-4">
         <h1 className="text-5xl font-bold mb-4">
