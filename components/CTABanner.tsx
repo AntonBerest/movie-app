@@ -33,7 +33,7 @@ export default function CTABanner() {
         ))}
       </div>
 
-      <div className="absolute inset-0 bg-gradient-to-r from-black via-black/80 to-transparent" />
+      <div className="absolute inset-0 bg-black-60" />
 
       <div className="absolute inset-0 flex justify-between items-center px-16">
         <div>
