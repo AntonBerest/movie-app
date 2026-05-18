@@ -33,7 +33,13 @@ export default function CTABanner() {
         ))}
       </div>
 
-      <div className="absolute inset-0 bg-black-60" />
+      <div
+        className="absolute inset-0"
+        style={{
+          background:
+            'linear-gradient(to right, rgba(0,0,0,0.9), rgba(0,0,0,0.3))',
+        }}
+      />
 
       <div className="absolute inset-0 flex justify-between items-center px-16">
         <div>
