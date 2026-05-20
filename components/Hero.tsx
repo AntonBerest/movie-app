@@ -1,3 +1,5 @@
+import PlayFilled from '@/public/play-filled.svg'
+
 const posters = [
   'https://image.tmdb.org/t/p/w300/9PFonBhy4cQy7Jz20NpMygczOkv.jpg',
   'https://image.tmdb.org/t/p/w300/49WJfeN0moxb9IPfGn8AIqMGskD.jpg',
@@ -44,7 +46,7 @@ export default function Hero() {
           movies and shows on demand, anytime, anywhere.
         </p>
         <button className="flex items-center gap-2 bg-red-600 hover:bg-red-700 text-white px-2 md:px-8 py-3 rounded-lg text-sm font-semibold">
-          ▶ Start Watching Now
+          <PlayFilled className="w-5 h-5" /> Start Watching Now
         </button>
       </div>
     </section>
