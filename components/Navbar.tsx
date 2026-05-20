@@ -4,7 +4,7 @@ export default function Navbar() {
       <div className="text-red-500 font-bold text-xl"> StreamVibe</div>
 
       <div className="bg-zinc-900 border border-zinc-800 rounded-xl px-2 py-1">
-        <ul className="flex gap-8 text-white text-sm list-none">
+        <ul className="hidden md:flex gap-8 text-white text-sm list-none">
           <li className="cursor-pointer hover:text-red-500">Home</li>
           <li className="cursor-pointer hover:text-red-500">Movies & Shows</li>
           <li className="cursor-pointer hover:text-red-500">Support</li>
@@ -12,7 +12,7 @@ export default function Navbar() {
         </ul>
       </div>
 
-      <div className="flex gap-4">
+      <div className="hidden md:flex gap-4">
         <button className="text-white hover:text-red-500">🔍</button>
         <button className="text-white hover:text-red-500">🔔</button>
       </div>
