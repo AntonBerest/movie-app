@@ -21,7 +21,7 @@ const posters = [
 
 export default function CTABanner() {
   return (
-    <div className="relative mx-16 my-12 rounded-xl overflow-hidden h-150">
+    <div className="relative mx-4 md:mx-16 my-12 rounded-xl overflow-hidden h-150">
       <div className="grid grid-cols-9 grid-rows-2 gap-2 h-full">
         {posters.map((url, index) => (
           <img

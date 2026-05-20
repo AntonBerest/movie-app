@@ -5,7 +5,7 @@ export default function Plans() {
   const [isYearly, setIsYearly] = useState(false)
 
   return (
-    <div className="px-16 py-12 ">
+    <div className="px-4 md:px-16 py-12 ">
       <div className="flex justify-between items-center mb-6">
         <div>
           <h1 className="text-3xl font-bold mb-4 text-white">

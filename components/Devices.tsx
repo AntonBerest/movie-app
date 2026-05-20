@@ -1,6 +1,6 @@
 export default function Devices() {
   return (
-    <div className="px-16 py-12">
+    <div className="px-4 md:px-16 py-12">
       <div className="mb-6">
         <h1 className="text-3xl font-bold mb-4 text-white">
           We Provide you streaming experience across various devices.
