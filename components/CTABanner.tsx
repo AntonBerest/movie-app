@@ -41,7 +41,7 @@ export default function CTABanner() {
         }}
       />
 
-      <div className="absolute inset-0 flex justify-between items-center px-16">
+      <div className="absolute inset-0 flex justify-between items-center px-4 md:px-16">
         <div>
           <h1 className="text-4xl font-bold mb-4 text-white">
             Start your free trial today!
@@ -53,7 +53,7 @@ export default function CTABanner() {
         </div>
 
         <div>
-          <button className="bg-red-700 text-white rounded-lg px-4 py-2">
+          <button className="bg-red-700 text-white rounded-lg px-1 md:px-4 py-2">
             Start a Free Trail
           </button>
         </div>

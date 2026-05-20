@@ -52,10 +52,10 @@ export default function Plans() {
           </div>
 
           <div className="flex justify-between mb-10">
-            <button className="bg-neutral-900 text-white font-bold border border-zinc-800 px-4 py-2 rounded-lg">
+            <button className="bg-neutral-900 text-white font-bold border border-zinc-800 px-1 md:px-4 py-2 rounded-lg">
               Start Free Trial
             </button>
-            <button className="bg-red-700 text-white font-bold border border-zinc-800 px-4 py-2 rounded-lg">
+            <button className="bg-red-700 text-white font-bold border border-zinc-800 px-1 md:px-4 py-2 rounded-lg">
               Choose Plan
             </button>
           </div>
@@ -78,10 +78,10 @@ export default function Plans() {
           </div>
 
           <div className="flex justify-between">
-            <button className="bg-neutral-900 text-white font-bold border border-zinc-800 px-4 py-2 rounded-lg">
+            <button className="bg-neutral-900 text-white font-bold border border-zinc-800 px-1 md:px-4 py-2 rounded-lg">
               Start Free Trial
             </button>
-            <button className="bg-red-700 text-white font-bold border border-zinc-800 px-4 py-2 rounded-lg">
+            <button className="bg-red-700 text-white font-bold border border-zinc-800 px-1 md:px-4 py-2 rounded-lg">
               Choose Plan
             </button>
           </div>
@@ -104,10 +104,10 @@ export default function Plans() {
           </div>
 
           <div className="flex justify-between">
-            <button className="bg-neutral-900 text-white font-bold border border-zinc-800 px-4 py-2 rounded-lg">
+            <button className="bg-neutral-900 text-white font-bold border border-zinc-800 px-1 md:px-4 py-2 rounded-lg">
               Start Free Trial
             </button>
-            <button className="bg-red-700 text-white font-bold border border-zinc-800 px-4 py-2 rounded-lg">
+            <button className="bg-red-700 text-white font-bold border border-zinc-800 px-1 md:px-4 py-2 rounded-lg">
               Choose Plan
             </button>
           </div>

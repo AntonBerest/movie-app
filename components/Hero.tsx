@@ -43,7 +43,7 @@ export default function Hero() {
           StreamVibe is the best streaming experience for watching your favorite
           movies and shows on demand, anytime, anywhere.
         </p>
-        <button className="flex items-center gap-2 bg-red-600 hover:bg-red-700 text-white px-8 py-3 rounded-lg text-sm font-semibold">
+        <button className="flex items-center gap-2 bg-red-600 hover:bg-red-700 text-white px-2 md:px-8 py-3 rounded-lg text-sm font-semibold">
           ▶ Start Watching Now
         </button>
       </div>
