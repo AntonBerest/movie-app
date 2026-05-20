@@ -43,7 +43,7 @@ export default function Footer() {
         </div>
         <div>
           <h3 className="text-white font-bold mb-4">Connect With Us</h3>
-          <div className="flex gap-4">
+          <div className="flex flex-col gap-2">
             <a
               href="https://twitter.com"
               target="_blank"
