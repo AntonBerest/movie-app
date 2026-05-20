@@ -1,7 +1,7 @@
 export default function Footer() {
   return (
     <div className="px-4 md:px-16 py-12 bg-zinc-900 border-t border-zinc-800">
-      <div className="grid grid-cols-6 gap-8">
+      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8">
         <div>
           <h3 className="text-white font-bold mb-4">Home</h3>
           <div className="flex flex-col gap-2">

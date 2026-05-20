@@ -27,7 +27,7 @@ export default function FAQ() {
         </div>
       </div>
 
-      <div className="grid grid-cols-2 gap-4 mt-6">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-6">
         <div className="border border-zinc-800 rounded-xl p-6 self-start">
           <div
             className="flex justify-between items-center cursor-pointer"

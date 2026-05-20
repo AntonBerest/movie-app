@@ -34,7 +34,7 @@ export default function Plans() {
         </div>
       </div>
 
-      <div className="grid grid-cols-3 gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
         <div className="bg-zinc-900 rounded-xl p-4 border border-zinc-800">
           <h1 className="text-xl font-bold mb-4 text-white">Basic Plan</h1>
           <p className="text-zinc-400 mb-8">
