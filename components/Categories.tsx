@@ -73,7 +73,7 @@ export default function Categories() {
   const visible = categories.slice(page * perPage, page * perPage + perPage)
 
   return (
-    <div className="px-16 py-12">
+    <div className="px-4 md:px-16 py-12">
       <div className="flex justify-between items-center mb-6">
         <div>
           <h1 className="text-3xl font-bold mb-4 text-white">
@@ -116,7 +116,7 @@ export default function Categories() {
         </div>
       </div>
 
-      <div className="grid grid-cols-5 gap-4 mt-6">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4 mt-6">
         {visible.map((category, index) => (
           <div key={index} className="bg-zinc-900 rounded-xl p-4">
             <div className="grid grid-cols-2 gap-1 mb-4">
