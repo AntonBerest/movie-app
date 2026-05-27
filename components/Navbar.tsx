@@ -13,8 +13,12 @@ export default function Navbar() {
       </div>
 
       <div className="hidden md:flex gap-4">
-        <button className="text-white hover:text-red-500">🔍</button>
-        <button className="text-white hover:text-red-500">🔔</button>
+        <button className="text-white hover:text-red-500">
+          <img src="/search.svg" className="w-5 h-5" />
+        </button>
+        <button className="text-white hover:text-red-500">
+          <img src="/bell.svg" className="w-5 h-5" />
+        </button>
       </div>
     </nav>
   )

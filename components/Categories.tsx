@@ -94,7 +94,6 @@ export default function Categories() {
             ←
           </button>
 
-          {/* Индикатор страниц */}
           <div className="flex gap-1 px-2">
             {Array.from({ length: Math.ceil(categories.length / perPage) }).map(
               (_, i) => (
