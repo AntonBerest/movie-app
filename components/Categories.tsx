@@ -75,12 +75,12 @@ export default function Categories() {
 
   return (
     <div className="px-4 md:px-16 py-12">
-      <div className="flex justify-between items-center mb-6">
+      <div className="flex justify-between items-center mb-4">
         <div>
           <h1 className="text-3xl font-bold mb-4 text-white">
             Explore our wide variety of categories
           </h1>
-          <p className="text-zinc-400 mb-8">
+          <p className="text-zinc-400 mb-4">
             Whether you`re looking for a comedy to make you laugh, a drama to
             make you think, or a documentary to learn something new
           </p>
@@ -92,7 +92,7 @@ export default function Categories() {
             disabled={page === 0}
             className="bg-zinc-800 text-white px-4 py-2 rounded-lg hover:bg-zinc-700 disabled:opacity-30"
           >
-            ←
+            <img src="/arrow-left.svg" className="w-5 h-5" />
           </button>
 
           <div className="flex gap-1 px-2">
@@ -111,7 +111,7 @@ export default function Categories() {
             disabled={page * perPage + perPage >= categories.length}
             className="bg-zinc-800 text-white px-4 py-2 rounded-lg hover:bg-zinc-700 disabled:opacity-30"
           >
-            →
+            <img src="/arrow-right.svg" className="w-5 h-5" />
           </button>
         </div>
       </div>
@@ -134,7 +134,9 @@ export default function Categories() {
               </div>
               <div className="flex justify-between text-white">
                 <span>{category.name}</span>
-                <span>→</span>
+                <span>
+                  <img src="/arrow-right.svg" className="w-5 h-5" />
+                </span>
               </div>
             </div>
           </Link>

@@ -51,7 +51,7 @@ export default function Plans() {
             </span>
           </div>
 
-          <div className="flex justify-between mb-10">
+          <div className="flex justify-center gap-8 mb-6 mt-4">
             <button className="bg-neutral-900 text-white font-bold border border-zinc-800 px-1 md:px-4 py-2 rounded-lg">
               Start Free Trial
             </button>
@@ -77,7 +77,7 @@ export default function Plans() {
             </span>
           </div>
 
-          <div className="flex justify-between">
+          <div className="flex justify-center gap-8 mb-6 mt-4">
             <button className="bg-neutral-900 text-white font-bold border border-zinc-800 px-1 md:px-4 py-2 rounded-lg">
               Start Free Trial
             </button>
@@ -103,7 +103,7 @@ export default function Plans() {
             </span>
           </div>
 
-          <div className="flex justify-between">
+          <div className="flex justify-center gap-8 mb-6 mt-4">
             <button className="bg-neutral-900 text-white font-bold border border-zinc-800 px-1 md:px-4 py-2 rounded-lg">
               Start Free Trial
             </button>

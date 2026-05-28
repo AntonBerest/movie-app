@@ -9,7 +9,7 @@ import Footer from '@/components/Footer'
 
 export default function Home() {
   return (
-    <main className="bg-neutral-900">
+    <main className="bg-[#141414]">
       <Navbar />
       <Hero />
       <Categories />

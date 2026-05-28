@@ -15,51 +15,60 @@ export default function Devices() {
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
         <div className="bg-zinc-900 rounded-xl p-4 border border-zinc-800">
-          <h1 className="text-xl font-bold mb-4 text-white"> 📱 Smartphones</h1>
-          <p className="text-zinc-400 mb-8">
-            StreamVibe is optimized for both Android and iOS smartphones.
-            Download our app from the Google Play Store or the Apple App Store
-          </p>
-        </div>
-
-        <div className="bg-zinc-900 rounded-xl p-4 border border-zinc-800">
-          <h1 className="text-xl font-bold mb-4 text-white"> 📱 Tablet</h1>
-          <p className="text-zinc-400 mb-8">
-            StreamVibe is optimized for both Android and iOS smartphones.
-            Download our app from the Google Play Store or the Apple App Store
-          </p>
-        </div>
-
-        <div className="bg-zinc-900 rounded-xl p-4 border border-zinc-800">
-          <h1 className="text-xl font-bold mb-4 text-white"> 📺 Smart TV</h1>
-          <p className="text-zinc-400 mb-8">
-            StreamVibe is optimized for both Android and iOS smartphones.
-            Download our app from the Google Play Store or the Apple App Store
-          </p>
-        </div>
-
-        <div className="bg-zinc-900 rounded-xl p-4 border border-zinc-800">
-          <h1 className="text-xl font-bold mb-4 text-white"> 💻 Laptops</h1>
-          <p className="text-zinc-400 mb-8">
-            StreamVibe is optimized for both Android and iOS smartphones.
-            Download our app from the Google Play Store or the Apple App Store
-          </p>
-        </div>
-
-        <div className="bg-zinc-900 rounded-xl p-4 border border-zinc-800">
-          <h1 className="text-xl font-bold mb-4 text-white">
-            {' '}
-            🎮 Gaming Consoles
+          <h1 className="text-xl font-bold mb-4 text-white flex gap-2">
+            <img src="/smartphone.svg" className="w-6 h-6" /> Smartphones
           </h1>
-          <p className="text-zinc-400 mb-8">
+          <p className="text-zinc-400 mb-6">
             StreamVibe is optimized for both Android and iOS smartphones.
             Download our app from the Google Play Store or the Apple App Store
           </p>
         </div>
 
         <div className="bg-zinc-900 rounded-xl p-4 border border-zinc-800">
-          <h1 className="text-xl font-bold mb-4 text-white"> 📱 VR Headsets</h1>
-          <p className="text-zinc-400 mb-8">
+          <h1 className="text-xl font-bold mb-4 text-white flex gap-2">
+            <img src="/tablet.svg" className="w-6 h-6" /> Tablet
+          </h1>
+          <p className="text-zinc-400 mb-6">
+            StreamVibe is optimized for both Android and iOS smartphones.
+            Download our app from the Google Play Store or the Apple App Store
+          </p>
+        </div>
+
+        <div className="bg-zinc-900 rounded-xl p-4 border border-zinc-800">
+          <h1 className="text-xl font-bold mb-4 text-white flex gap-2">
+            <img src="/smartTV.svg" className="w-6 h-6" /> Smart TV
+          </h1>
+          <p className="text-zinc-400 mb-6">
+            StreamVibe is optimized for both Android and iOS smartphones.
+            Download our app from the Google Play Store or the Apple App Store
+          </p>
+        </div>
+
+        <div className="bg-zinc-900 rounded-xl p-4 border border-zinc-800">
+          <h1 className="text-xl font-bold mb-4 text-white flex gap-2">
+            <img src="/laptop.svg" className="w-7 h-7" /> Laptops
+          </h1>
+          <p className="text-zinc-400 mb-6">
+            StreamVibe is optimized for both Android and iOS smartphones.
+            Download our app from the Google Play Store or the Apple App Store
+          </p>
+        </div>
+
+        <div className="bg-zinc-900 rounded-xl p-4 border border-zinc-800">
+          <h1 className="text-xl font-bold mb-4 text-white flex gap-2">
+            <img src="/console.svg" className="w-7 h-7" /> Gaming Consoles
+          </h1>
+          <p className="text-zinc-400 mb-6">
+            StreamVibe is optimized for both Android and iOS smartphones.
+            Download our app from the Google Play Store or the Apple App Store
+          </p>
+        </div>
+
+        <div className="bg-zinc-900 rounded-xl p-4 border border-zinc-800">
+          <h1 className="text-xl font-bold mb-4 text-white flex gap-2">
+            <img src="/VR.svg" className="w-7 h-7" /> VR Headsets
+          </h1>
+          <p className="text-zinc-400 mb-6">
             StreamVibe is optimized for both Android and iOS smartphones.
             Download our app from the Google Play Store or the Apple App Store
           </p>

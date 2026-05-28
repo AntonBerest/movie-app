@@ -28,7 +28,7 @@ export default function FAQ() {
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-6">
-        <div className="border border-zinc-800 rounded-xl p-6 self-start">
+        <div className="rounded-xl p-6 self-start">
           <div
             className="flex justify-between items-center cursor-pointer"
             onClick={() => toggle(1)}
@@ -50,7 +50,7 @@ export default function FAQ() {
           )}
         </div>
 
-        <div className="border border-zinc-800 rounded-xl p-6 self-start">
+        <div className="rounded-xl p-6 self-start">
           <div
             className="flex justify-between items-center cursor-pointer"
             onClick={() => toggle(2)}
@@ -72,7 +72,7 @@ export default function FAQ() {
           )}
         </div>
 
-        <div className="border border-zinc-800 rounded-xl p-6 self-start">
+        <div className="rounded-xl p-6 self-start">
           <div
             className="flex justify-between items-center cursor-pointer"
             onClick={() => toggle(3)}
@@ -96,7 +96,7 @@ export default function FAQ() {
           )}
         </div>
 
-        <div className="border border-zinc-800 rounded-xl p-6 self-start">
+        <div className="rounded-xl p-6 self-start">
           <div
             className="flex justify-between items-center cursor-pointer"
             onClick={() => toggle(4)}
@@ -118,7 +118,7 @@ export default function FAQ() {
           )}
         </div>
 
-        <div className="border border-zinc-800 rounded-xl p-6 self-start">
+        <div className="rounded-xl p-6 self-start">
           <div
             className="flex justify-between items-center cursor-pointer"
             onClick={() => toggle(5)}
@@ -142,7 +142,7 @@ export default function FAQ() {
           )}
         </div>
 
-        <div className="border border-zinc-800 rounded-xl p-6 self-start">
+        <div className="rounded-xl p-6 self-start">
           <div
             className="flex justify-between items-center cursor-pointer"
             onClick={() => toggle(6)}
@@ -166,7 +166,7 @@ export default function FAQ() {
           )}
         </div>
 
-        <div className="border border-zinc-800 rounded-xl p-6 self-start">
+        <div className="rounded-xl p-6 self-start">
           <div
             className="flex justify-between items-center cursor-pointer"
             onClick={() => toggle(7)}
@@ -190,7 +190,7 @@ export default function FAQ() {
           )}
         </div>
 
-        <div className="border border-zinc-800 rounded-xl p-6 self-start">
+        <div className="rounded-xl p-6 self-start">
           <div
             className="flex justify-between items-center cursor-pointer"
             onClick={() => toggle(8)}
