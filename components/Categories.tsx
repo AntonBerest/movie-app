@@ -1,5 +1,6 @@
 'use client'
 import { useState } from 'react'
+import Link from 'next/link'
 
 export default function Categories() {
   const categories = [
@@ -117,21 +118,26 @@ export default function Categories() {
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4 mt-6">
         {visible.map((category, index) => (
-          <div key={index} className="bg-zinc-900 rounded-xl p-4">
-            <div className="grid grid-cols-2 gap-1 mb-4">
-              {category.posters.map((url, i) => (
-                <img
-                  key={i}
-                  src={url}
-                  className="rounded-lg w-full h-28 object-cover"
-                />
-              ))}
+          <Link key={index} href="/movies/123">
+            <div
+              key={index}
+              className="bg-zinc-900 rounded-xl p-4 cursor-pointer hover:bg-zinc-800 transition"
+            >
+              <div className="grid grid-cols-2 gap-1 mb-4">
+                {category.posters.map((url, i) => (
+                  <img
+                    key={i}
+                    src={url}
+                    className="rounded-lg w-full h-28 object-cover"
+                  />
+                ))}
+              </div>
+              <div className="flex justify-between text-white">
+                <span>{category.name}</span>
+                <span>→</span>
+              </div>
             </div>
-            <div className="flex justify-between text-white">
-              <span>{category.name}</span>
-              <span>→</span>
-            </div>
-          </div>
+          </Link>
         ))}
       </div>
     </div>

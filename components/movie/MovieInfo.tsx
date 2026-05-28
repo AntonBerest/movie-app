@@ -115,6 +115,16 @@ export default function MovieInfo() {
             >
               <img src="/arrow-left.svg" className="w-5 h-5" />
             </button>
+            <div className="flex gap-1 px-2">
+              {Array.from({
+                length: Math.ceil(reviews.length / reviewsPerPage),
+              }).map((_, i) => (
+                <div
+                  key={i}
+                  className={`h-1 w-6 rounded-full ${i === reviewPage ? 'bg-red-600' : 'bg-zinc-700'}`}
+                />
+              ))}
+            </div>
             <button
               onClick={() => setReviewPage(reviewPage + 1)}
               disabled={(reviewPage + 1) * reviewsPerPage >= reviews.length}
