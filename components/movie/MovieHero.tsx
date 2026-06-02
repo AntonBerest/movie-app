@@ -1,6 +1,6 @@
 export default function MovieHero() {
   return (
-    <section className="relative h-200 mx-16 mt-24 overflow-hidden rounded-xl">
+    <section className="relative h-96 mx-4 md:mx-16 mt-24 rounded-xl overflow-hidden">
       <div className=" h-full">
         <img
           src={

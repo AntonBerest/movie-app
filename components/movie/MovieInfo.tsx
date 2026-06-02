@@ -36,7 +36,7 @@ export default function MovieInfo() {
   )
 
   return (
-    <div className="px-16 py-8 grid grid-cols-3 gap-8">
+    <div className="px-4 md:px-16 py-8 grid grid-cols-1 md:grid-cols-3 gap-8">
       <div className="col-span-2">
         <div className="bg-[#1A1A1A] text-white px-4 py-2 rounded-lg disabled:opacity-30">
           <p className="text-zinc-400">Description</p>
@@ -90,7 +90,7 @@ export default function MovieInfo() {
               </button>
             </div>
           </div>
-          <div className="grid grid-cols-2 gap-4 mt-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
             {visibleReviews.map((review, index) => (
               <div key={index} className="bg-[#0F0F0F] rounded-xl">
                 <div className="flex justify-between items-center mt-2">
@@ -146,7 +146,7 @@ export default function MovieInfo() {
           <img src="/translation.svg" className="w-5 h-5" />
           <p className="text-zinc-400">Available Languages</p>
         </div>
-        <div className="grid grid-cols-4 gap-2 mt-4">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-2 mt-4">
           <button className="bg-[#141414] hover:bg-zinc-700 px-2 py-2 rounded-full border border-zinc-800 text-white">
             English
           </button>
@@ -201,7 +201,7 @@ export default function MovieInfo() {
           <img src="/genres.svg" className="w-5 h-5" />
           <p className="text-zinc-400">Genres</p>
         </div>
-        <div className="grid grid-cols-4 gap-2 mt-4">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-2 mt-4">
           <button className="bg-[#141414] hover:bg-zinc-700 px-2 py-2 rounded-full border border-zinc-800 text-white">
             Adventure
           </button>
