@@ -213,7 +213,7 @@ export default function MovieInfo() {
           </button>
         </div>
         <p className="text-zinc-400 mt-8">Director</p>
-        <div className="bg-[#141414] hover:bg-zinc-700 px-4 py-4 w-80 rounded-xl border border-zinc-800 flex gap-4 mt-4">
+        <div className="bg-[#141414] hover:bg-zinc-700 px-4 py-4 w-full rounded-xl border border-zinc-800 flex gap-4 mt-4">
           <div>
             <img
               src={
@@ -229,7 +229,7 @@ export default function MovieInfo() {
           </div>
         </div>
         <p className="text-zinc-400 mt-8">Writer</p>
-        <div className="bg-[#141414] hover:bg-zinc-700 px-4 py-4 w-80 rounded-xl border border-zinc-800 flex gap-4 mt-4">
+        <div className="bg-[#141414] hover:bg-zinc-700 px-4 py-4 w-full rounded-xl border border-zinc-800 flex gap-4 mt-4">
           <div>
             <img
               src={
