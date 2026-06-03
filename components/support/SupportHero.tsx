@@ -61,8 +61,8 @@ export default function SupportHero() {
               and Privacy Policy
             </label>
           </div>
-          <div className="mt-6">
-            <button className="bg-red-700 text-white rounded-lg px-1 md:px-4 py-2 justify-end">
+          <div className="mt-6 flex items-end">
+            <button className="bg-red-700 text-white rounded-lg px-1 md:px-4 py-2 ">
               Send Message
             </button>
           </div>
