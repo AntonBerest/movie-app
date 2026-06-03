@@ -31,7 +31,7 @@ export default function SupportHero() {
               src={`https://image.tmdb.org/t/p/w300/${img}`}
               className="
                 rounded-xl
-                h-20
+                h-30
                 w-full
                 aspect-[2/3]
                 object-cover
@@ -72,7 +72,7 @@ export default function SupportHero() {
 
           <div className="grid grid-cols-[90px_1fr] gap-3">
             <input
-              placeholder="🇮🇳"
+              placeholder="En"
               className="bg-zinc-900 border border-zinc-800 rounded-xl px-4 py-4"
             />
 
