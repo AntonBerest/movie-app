@@ -24,6 +24,7 @@ export default function SupportHero() {
             'vZloFAK7NmvMGKE7VkF5UHaz0I.jpg',
             '74xTEgt7R36Fpooo50r9T25onhq.jpg',
             'kuf6dutpsT0vSVehic3EZIqkOBt.jpg',
+            'gPbM0MK8CP8A174rmUwGsADNYKD.jpg',
           ].map((img) => (
             <img
               key={img}
