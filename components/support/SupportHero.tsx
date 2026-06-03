@@ -31,6 +31,7 @@ export default function SupportHero() {
               src={`https://image.tmdb.org/t/p/w300/${img}`}
               className="
                 rounded-xl
+                h-20
                 w-full
                 aspect-[2/3]
                 object-cover
