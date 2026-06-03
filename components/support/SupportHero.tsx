@@ -45,6 +45,13 @@ export default function SupportHero() {
             />
           </div>
         </div>
+        <div>
+          <label className="text-white text-sm mb-2 block">Message</label>
+          <textarea
+            placeholder="Enter your Message"
+            className="w-full bg-zinc-900 border border-zinc-800 rounded-lg px-4 py-3 text-white h-32 resize-none"
+          />
+        </div>
         <div className="flex mt-6">
           <button></button>
           <p className="text-zinc-400">
