@@ -9,7 +9,7 @@ export default function SupportHero() {
           We`re here to help you with any problems you may be having with our
           product.
         </p>
-        <div className="grid grid-cols-4 gap-2 mt-6">
+        <div className="grid grid-cols-4 gap-2 mt-6 border-2 border-zinc-800">
           <img
             src="https://image.tmdb.org/t/p/w300/9PFonBhy4cQy7Jz20NpMygczOkv.jpg"
             className="rounded-lg w-full h-20 object-cover"
