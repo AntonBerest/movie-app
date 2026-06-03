@@ -57,11 +57,11 @@ export default function SupportHero() {
         <div className="grid grid-cols-2 gap-4">
           <div className="flex gap-2 mt-6">
             <label>
-              <input type="checkbox" id="TermsOfUse" />I agree with Terms of Use
-              and Privacy Policy
+              <input type="checkbox" id="TermsOfUse" className="mr-2" />I agree
+              with Terms of Use and Privacy Policy
             </label>
           </div>
-          <div className="mt-6 flex items-end">
+          <div className="mt-6">
             <button className="bg-red-700 text-white rounded-lg px-1 md:px-4 py-2 ">
               Send Message
             </button>
