@@ -54,7 +54,7 @@ export default function SupportHero() {
             className="w-full bg-zinc-900 border border-zinc-800 rounded-lg px-4 py-3 text-white h-32 resize-none"
           />
         </div>
-        <div className="grid grid-cols-2 gap-4">
+        <div className="flex justify-between">
           <div className="flex gap-2 mt-6">
             <label>
               <input type="checkbox" id="TermsOfUse" className="mr-2" />I agree
