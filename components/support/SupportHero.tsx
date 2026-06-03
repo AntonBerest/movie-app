@@ -1,122 +1,156 @@
 export default function SupportHero() {
   return (
-    <div className="mx-4 md:mx-16 mt-24 grid grid-cols-2 gap-4 ">
+    <div className="mx-4 md:mx-16 mt-20 grid grid-cols-1 lg:grid-cols-2 gap-12">
       <div>
-        <h1 className="text-5xl font-bold mb-4">
+        <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
           Welcome to our support page!
         </h1>
-        <p className="text-zinc-400 max-w-xl mb-8">
-          We`re here to help you with any problems you may be having with our
+
+        <p className="text-zinc-400 max-w-xl mb-10 text-base md:text-lg">
+          We’re here to help you with any problems you may be having with our
           product.
         </p>
-        <div className="grid grid-cols-4 gap-2 mt-6 border-2 border-zinc-800">
-          <img
-            src="https://image.tmdb.org/t/p/w300/9PFonBhy4cQy7Jz20NpMygczOkv.jpg"
-            className="rounded-lg w-full h-20 object-cover"
-          />
-          <img
-            src="https://image.tmdb.org/t/p/w300/49WJfeN0moxb9IPfGn8AIqMGskD.jpg"
-            className="rounded-lg w-full h-20 object-cover"
-          />
-          <img
-            src="https://image.tmdb.org/t/p/w300/uKvVjHNqB5VmOrdxqAt2F7J78ED.jpg"
-            className="rounded-lg w-full h-20 object-cover"
-          />
-          <img
-            src="https://image.tmdb.org/t/p/w300/pB8BM7pdSp6B6Ih7QZ4DrQ3PmJK.jpg"
-            className="rounded-lg w-full h-20 object-cover"
-          />
-          <img
-            src="https://image.tmdb.org/t/p/w300/t6HIqrRAclMCA60NsSmeqe9RmNV.jpg"
-            className="rounded-lg w-full h-20 object-cover"
-          />
-          <img
-            src="https://image.tmdb.org/t/p/w300/8Gxv8gSFCU0XGDykEGv7zR1n2ua.jpg"
-            className="rounded-lg w-full h-20 object-cover"
-          />
-          <img
-            src="https://image.tmdb.org/t/p/w300/qNBAXBIQlnOThrVvA6mA2B5ggV6.jpg"
-            className="rounded-lg w-full h-20 object-cover"
-          />
-          <img
-            src="https://image.tmdb.org/t/p/w300/1g0dhYtq4irTY1GPXvft6k4YLjm.jpg"
-            className="rounded-lg w-full h-20 object-cover"
-          />
-          <img
-            src="https://image.tmdb.org/t/p/w300/vZloFAK7NmvMGKE7VkF5UHaz0I.jpg"
-            className="rounded-lg w-full h-20 object-cover"
-          />
-          <img
-            src="https://www.themoviedb.org/t/p/w600_and_h900_face/fWVSwgjpT2D78VUh6X8UBd2rorW.jpg"
-            className="rounded-lg w-full h-20 object-cover"
-          />
-          <img
-            src="https://image.tmdb.org/t/p/w300/74xTEgt7R36Fpooo50r9T25onhq.jpg"
-            className="rounded-lg w-full h-20 object-cover"
-          />
-          <img
-            src="https://image.tmdb.org/t/p/w300/kuf6dutpsT0vSVehic3EZIqkOBt.jpg"
-            className="rounded-lg w-full h-20 object-cover"
-          />
+
+        <div className="grid grid-cols-3 sm:grid-cols-4 gap-3 border border-zinc-800 rounded-2xl p-3 overflow-hidden">
+          {[
+            '9PFonBhy4cQy7Jz20NpMygczOkv.jpg',
+            '49WJfeN0moxb9IPfGn8AIqMGskD.jpg',
+            'uKvVjHNqB5VmOrdxqAt2F7J78ED.jpg',
+            'pB8BM7pdSp6B6Ih7QZ4DrQ3PmJK.jpg',
+            't6HIqrRAclMCA60NsSmeqe9RmNV.jpg',
+            '8Gxv8gSFCU0XGDykEGv7zR1n2ua.jpg',
+            'qNBAXBIQlnOThrVvA6mA2B5ggV6.jpg',
+            '1g0dhYtq4irTY1GPXvft6k4YLjm.jpg',
+            'vZloFAK7NmvMGKE7VkF5UHaz0I.jpg',
+            '74xTEgt7R36Fpooo50r9T25onhq.jpg',
+            'kuf6dutpsT0vSVehic3EZIqkOBt.jpg',
+          ].map((img) => (
+            <img
+              key={img}
+              src={`https://image.tmdb.org/t/p/w300/${img}`}
+              className="
+                rounded-xl
+                w-full
+                aspect-[2/3]
+                object-cover
+              "
+            />
+          ))}
         </div>
       </div>
-      <div className="px-2 py-2 md:px-8 md:py-8 bg-[#0F0F0F] border border-zinc-800 rounded-xl">
-        <div className="grid grid-cols-2 gap-4 ">
+
+      <div className="bg-[#0F0F0F] border border-zinc-800 rounded-2xl p-6 md:p-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <div>
-            <p className="text-white max-w-xl mb-4">First Name</p>
+            <label className="block mb-3">First Name</label>
+
             <input
               placeholder="Enter First Name"
-              className="bg-zinc-900 border border-zinc-800 rounded-lg px-4 py-3 text-white w-full"
+              className="w-full bg-zinc-900 border border-zinc-800 rounded-xl px-5 py-4"
             />
           </div>
+
           <div>
-            <p className="text-white max-w-xl mb-4">Last Name</p>
+            <label className="block mb-3">Last Name</label>
+
             <input
-              className="bg-zinc-900 border border-zinc-800 rounded-lg px-4 py-3 text-white w-full"
               placeholder="Enter Last Name"
+              className="w-full bg-zinc-900 border border-zinc-800 rounded-xl px-5 py-4"
             />
           </div>
-          <div className="mt-6">
-            <p className="text-white max-w-xl mb-4">Email</p>
+
+          <div>
+            <label className="block mb-3">Email</label>
+
             <input
               placeholder="Enter your Email"
-              className="bg-zinc-900 border border-zinc-800 rounded-lg px-4 py-3 text-white w-full"
+              className="w-full bg-zinc-900 border border-zinc-800 rounded-xl px-5 py-4"
             />
           </div>
-          <div className="mt-6">
-            <p className="text-white max-w-xl mb-4">Phone Number</p>
-            <div className="grid grid-cols-2 gap-4">
+
+          <div>
+            <label className="block mb-3">Phone Number</label>
+
+            <div className="flex gap-3">
               <input
-                placeholder="Country"
-                className="bg-zinc-900 border border-zinc-800 rounded-lg px-4 py-3 text-white"
+                placeholder="🇮🇳"
+                className="
+                  w-24
+                  bg-zinc-900
+                  border
+                  border-zinc-800
+                  rounded-xl
+                  px-4
+                "
               />
+
               <input
                 placeholder="Enter Phone Number"
-                className="bg-zinc-900 border border-zinc-800 rounded-lg px-4 py-3 text-white w-full"
+                className="
+                  flex-1
+                  bg-zinc-900
+                  border
+                  border-zinc-800
+                  rounded-xl
+                  px-5
+                  py-4
+                "
               />
             </div>
           </div>
         </div>
-        <div className="mt-6">
-          <label className="text-white text-sm mb-2 block">Message</label>
+
+        <div className="mt-8">
+          <label className="block mb-3">Message</label>
+
           <textarea
             placeholder="Enter your Message"
-            className="w-full bg-zinc-900 border border-zinc-800 rounded-lg px-4 py-3 text-white h-32 resize-none"
+            className="
+              w-full
+              h-40
+              resize-none
+              bg-zinc-900
+              border
+              border-zinc-800
+              rounded-xl
+              px-5
+              py-4
+            "
           />
         </div>
-        <div className="flex justify-between">
-          <div className="flex gap-2 mt-6">
-            <label>
-              <input type="checkbox" id="TermsOfUse" className="mr-2" />I agree
-              with Terms of Use and Privacy Policy
-            </label>
-          </div>
-          <div className="mt-6">
-            <button className="bg-red-700 text-white rounded-lg px-1 md:px-4 py-2 ">
-              Send Message
-            </button>
-          </div>
-        </div>
+
+        {/* checkbox */}
+
+        <label className="flex items-start gap-3 mt-8 cursor-pointer">
+          <input
+            type="checkbox"
+            className="
+              w-5
+              h-5
+              mt-1
+              accent-red-600
+            "
+          />
+
+          <span className="text-zinc-300">
+            I agree with Terms of Use and Privacy Policy
+          </span>
+        </label>
+
+        <button
+          className="
+            mt-8
+            w-full
+            bg-red-600
+            hover:bg-red-700
+            transition
+            rounded-xl
+            py-4
+            font-semibold
+          "
+        >
+          Send Message
+        </button>
       </div>
     </div>
   )
