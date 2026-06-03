@@ -1,6 +1,6 @@
 export default function SupportHero() {
   return (
-    <div className="mx-4 md:mx-16 mt-24 grid grid-cols-2 gap-4">
+    <div className="mx-4 md:mx-16 mt-24 px-4 py-4 grid grid-cols-2 gap-4">
       <div>
         <h1 className="text-5xl font-bold mb-4">
           Welcome to our support page!
@@ -15,13 +15,13 @@ export default function SupportHero() {
           <p className="text-white max-w-xl mb-4">First Name</p>
           <input
             placeholder="Enter First Name"
-            className="bg-zinc-900 border border-zinc-800 rounded-lg px-4 py-3 text-white"
+            className="bg-zinc-900 border border-zinc-800 rounded-lg px-4 py-3 text-white w-full"
           />
         </div>
         <div>
           <p className="text-white max-w-xl mb-4">Last Name</p>
           <input
-            className="bg-zinc-900 border border-zinc-800 rounded-lg px-4 py-3 text-white"
+            className="bg-zinc-900 border border-zinc-800 rounded-lg px-4 py-3 text-white w-full"
             placeholder="Enter Last Name"
           />
         </div>
@@ -29,7 +29,7 @@ export default function SupportHero() {
           <p className="text-white max-w-xl mb-4">Email</p>
           <input
             placeholder="Enter your Email"
-            className="bg-zinc-900 border border-zinc-800 rounded-lg px-4 py-3 text-white"
+            className="bg-zinc-900 border border-zinc-800 rounded-lg px-4 py-3 text-white w-full"
           />
         </div>
         <div>
@@ -41,7 +41,7 @@ export default function SupportHero() {
             />
             <input
               placeholder="Enter Last Name"
-              className="bg-zinc-900 border border-zinc-800 rounded-lg px-4 py-3 text-white"
+              className="bg-zinc-900 border border-zinc-800 rounded-lg px-4 py-3 text-white w-full"
             />
           </div>
         </div>
