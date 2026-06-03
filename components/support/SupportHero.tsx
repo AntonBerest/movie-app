@@ -55,7 +55,7 @@ export default function SupportHero() {
           />
         </div>
         <div className="grid grid-cols-2 gap-4">
-          <div className="flex mt-6">
+          <div className="flex gap-2 mt-6">
             <label>
               <input type="checkbox" id="TermsOfUse" />I agree with Terms of Use
               and Privacy Policy
