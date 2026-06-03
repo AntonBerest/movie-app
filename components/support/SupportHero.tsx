@@ -25,14 +25,14 @@ export default function SupportHero() {
             placeholder="Enter Last Name"
           />
         </div>
-        <div>
+        <div className="mt-6">
           <p className="text-white max-w-xl mb-4">Email</p>
           <input
             placeholder="Enter your Email"
             className="bg-zinc-900 border border-zinc-800 rounded-lg px-4 py-3 text-white w-full"
           />
         </div>
-        <div>
+        <div className="mt-6">
           <p className="text-white max-w-xl mb-4">Phone Number</p>
           <div className="grid grid-cols-2 gap-4">
             <input
@@ -45,13 +45,13 @@ export default function SupportHero() {
             />
           </div>
         </div>
-        <div className="flex">
+        <div className="flex mt-6">
           <button></button>
           <p className="text-zinc-400">
             I agree with Terms of Use and Privacy Policy
           </p>
         </div>
-        <div>
+        <div className="mt-6">
           <button className="bg-red-700 text-white rounded-lg px-1 md:px-4 py-2">
             Send Message
           </button>
