@@ -17,7 +17,6 @@ export default function Navbar() {
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 px-6 md:px-16 py-2 bg-transparent backdrop-blur-sm">
       <div className="flex items-center justify-between">
-
         <div className="text-white font-bold text-xl">StreamVibe</div>
 
         <div className="hidden md:block bg-zinc-900 border border-zinc-800 rounded-xl px-4 py-3">
@@ -50,7 +49,6 @@ export default function Navbar() {
         </div>
       </div>
 
-      {/* Мобільне меню */}
       {isOpen && (
         <div className="md:hidden mt-2 bg-zinc-900 border border-zinc-800 rounded-xl p-4 flex flex-col gap-2">
           {links.map((link) => (
