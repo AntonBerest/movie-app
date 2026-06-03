@@ -40,7 +40,7 @@ export default function MovieInfo() {
       <div className="col-span-2">
         <div className="bg-[#1A1A1A] text-white px-4 py-2 rounded-lg disabled:opacity-30">
           <p className="text-zinc-400">Description</p>
-          <p className="text-white mt-2">
+          <p className="text-white mt-2 mb-2">
             The adventures of a group of explorers who make use of a newly
             discovered wormhole to surpass the limitations on human space travel
             and conquer the vast distances involved in an interstellar voyage.
@@ -66,7 +66,7 @@ export default function MovieInfo() {
               </button>
             </div>
           </div>
-          <div className="grid grid-cols-8 gap-2 mt-4">
+          <div className="grid grid-cols-8 gap-2 mt-4 mb-4">
             {visibleCast.map((url, index) => (
               <img
                 key={index}
