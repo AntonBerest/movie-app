@@ -10,7 +10,7 @@ export default function SupportHero() {
           product.
         </p>
       </div>
-      <div className="px-4 py-4 bg-[#0F0F0F] border border-zinc-800 rounded-xl">
+      <div className="px-2 py-2 md:px-8 py-8 bg-[#0F0F0F] border border-zinc-800 rounded-xl">
         <div className="grid grid-cols-2 gap-4 ">
           <div>
             <p className="text-white max-w-xl mb-4">First Name</p>
