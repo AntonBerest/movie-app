@@ -68,35 +68,16 @@ export default function SupportHero() {
             />
           </div>
 
-          <div>
-            <label className="block mb-3">Phone Number</label>
+          <div className="grid grid-cols-[90px_1fr] gap-3">
+            <input
+              placeholder="🇮🇳"
+              className="bg-zinc-900 border border-zinc-800 rounded-xl px-4 py-4"
+            />
 
-            <div className="flex gap-3">
-              <input
-                placeholder="🇮🇳"
-                className="
-                  w-24
-                  bg-zinc-900
-                  border
-                  border-zinc-800
-                  rounded-xl
-                  px-4
-                "
-              />
-
-              <input
-                placeholder="Enter Phone Number"
-                className="
-                  flex-1
-                  bg-zinc-900
-                  border
-                  border-zinc-800
-                  rounded-xl
-                  px-5
-                  py-4
-                "
-              />
-            </div>
+            <input
+              placeholder="Enter Phone Number"
+              className="bg-zinc-900 border border-zinc-800 rounded-xl px-5 py-4 w-full"
+            />
           </div>
         </div>
 
