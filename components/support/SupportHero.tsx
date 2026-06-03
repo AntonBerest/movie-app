@@ -1,6 +1,6 @@
 export default function SupportHero() {
   return (
-    <div className="mx-4 md:mx-16 mt-24 px-4 py-4 grid grid-cols-2 gap-4">
+    <div className="mx-4 md:mx-16 mt-24 grid grid-cols-2 gap-4 rounded-xl">
       <div>
         <h1 className="text-5xl font-bold mb-4">
           Welcome to our support page!
@@ -10,7 +10,7 @@ export default function SupportHero() {
           product.
         </p>
       </div>
-      <div className="grid grid-cols-2 gap-4 bg-[#0F0F0F] border border-zinc-800">
+      <div className="grid grid-cols-2 gap-4 px-4 py-4 bg-[#0F0F0F] border border-zinc-800">
         <div>
           <p className="text-white max-w-xl mb-4">First Name</p>
           <input
