@@ -57,8 +57,8 @@ export default function SupportHero() {
         <div className="grid grid-cols-2 gap-4">
           <div className="flex mt-6">
             <label>
-              <input className="checkbox gap-2" id="TermsOfUse" />I agree with
-              Terms of Use and Privacy Policy
+              <input className="checkbox" id="TermsOfUse" />I agree with Terms
+              of Use and Privacy Policy
             </label>
           </div>
           <div className="mt-6">
