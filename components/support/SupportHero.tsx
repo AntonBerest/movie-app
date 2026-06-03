@@ -9,6 +9,56 @@ export default function SupportHero() {
           We`re here to help you with any problems you may be having with our
           product.
         </p>
+        <div className="grid grid-cols-4 gap-2 mt-6">
+          <img
+            src="https://image.tmdb.org/t/p/w300/9PFonBhy4cQy7Jz20NpMygczOkv.jpg"
+            className="rounded-lg w-full h-20 object-cover"
+          />
+          <img
+            src="https://image.tmdb.org/t/p/w300/49WJfeN0moxb9IPfGn8AIqMGskD.jpg"
+            className="rounded-lg w-full h-20 object-cover"
+          />
+          <img
+            src="https://image.tmdb.org/t/p/w300/uKvVjHNqB5VmOrdxqAt2F7J78ED.jpg"
+            className="rounded-lg w-full h-20 object-cover"
+          />
+          <img
+            src="https://image.tmdb.org/t/p/w300/pB8BM7pdSp6B6Ih7QZ4DrQ3PmJK.jpg"
+            className="rounded-lg w-full h-20 object-cover"
+          />
+          <img
+            src="https://image.tmdb.org/t/p/w300/t6HIqrRAclMCA60NsSmeqe9RmNV.jpg"
+            className="rounded-lg w-full h-20 object-cover"
+          />
+          <img
+            src="https://image.tmdb.org/t/p/w300/8Gxv8gSFCU0XGDykEGv7zR1n2ua.jpg"
+            className="rounded-lg w-full h-20 object-cover"
+          />
+          <img
+            src="https://image.tmdb.org/t/p/w300/qNBAXBIQlnOThrVvA6mA2B5ggV6.jpg"
+            className="rounded-lg w-full h-20 object-cover"
+          />
+          <img
+            src="https://image.tmdb.org/t/p/w300/1g0dhYtq4irTY1GPXvft6k4YLjm.jpg"
+            className="rounded-lg w-full h-20 object-cover"
+          />
+          <img
+            src="https://image.tmdb.org/t/p/w300/vZloFAK7NmvMGKE7VkF5UHaz0I.jpg"
+            className="rounded-lg w-full h-20 object-cover"
+          />
+          <img
+            src="https://www.themoviedb.org/t/p/w600_and_h900_face/fWVSwgjpT2D78VUh6X8UBd2rorW.jpg"
+            className="rounded-lg w-full h-20 object-cover"
+          />
+          <img
+            src="https://image.tmdb.org/t/p/w300/74xTEgt7R36Fpooo50r9T25onhq.jpg"
+            className="rounded-lg w-full h-20 object-cover"
+          />
+          <img
+            src="https://image.tmdb.org/t/p/w300/kuf6dutpsT0vSVehic3EZIqkOBt.jpg"
+            className="rounded-lg w-full h-20 object-cover"
+          />
+        </div>
       </div>
       <div className="px-2 py-2 md:px-8 md:py-8 bg-[#0F0F0F] border border-zinc-800 rounded-xl">
         <div className="grid grid-cols-2 gap-4 ">
