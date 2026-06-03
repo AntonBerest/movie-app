@@ -47,19 +47,19 @@ export default function SupportHero() {
             </div>
           </div>
         </div>
-        <div>
+        <div className="mt-6">
           <label className="text-white text-sm mb-2 block">Message</label>
           <textarea
             placeholder="Enter your Message"
             className="w-full bg-zinc-900 border border-zinc-800 rounded-lg px-4 py-3 text-white h-32 resize-none"
           />
         </div>
-        <div className="grid grid-cols-2 gap-4 ">
+        <div className="grid grid-cols-2 gap-4 justify-between">
           <div className="flex mt-6">
-            <button></button>
-            <p className="text-zinc-400">
-              I agree with Terms of Use and Privacy Policy
-            </p>
+            <label>
+              <input type="checkbox" id="TermsOfUse" />I agree with Terms of Use
+              and Privacy Policy
+            </label>
           </div>
           <div className="mt-6">
             <button className="bg-red-700 text-white rounded-lg px-1 md:px-4 py-2">
