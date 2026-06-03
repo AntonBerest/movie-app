@@ -10,12 +10,18 @@ export default function SupportHero() {
           product.
         </p>
       </div>
-      <div className="grid grid-cols-2 gap-4">
+      <div className="grid grid-cols-2 gap-4 bg-[#0F0F0F] border border-zinc-800">
+        <div>
+          <p className=""></p>
+          <input
+            placeholder="Enter First Name"
+            className="bg-zinc-900 border border-zinc-800 rounded-lg px-4 py-3 text-white"
+          />
+        </div>
         <input
-          placeholder="Enter First Name"
           className="bg-zinc-900 border border-zinc-800 rounded-lg px-4 py-3 text-white"
+          placeholder="Enter Last Name"
         />
-        <input placeholder="Enter Last Name" className="..." />
       </div>
     </div>
   )
