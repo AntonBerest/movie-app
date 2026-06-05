@@ -72,7 +72,7 @@ export default function SupportHero() {
 
           <div className="grid grid-cols-[90px_1fr] gap-3">
             <input
-              placeholder="En"
+              placeholder="Country"
               className="bg-zinc-900 border border-zinc-800 rounded-xl px-4 py-4"
             />
 
@@ -102,7 +102,6 @@ export default function SupportHero() {
           />
         </div>
 
-        {/* checkbox */}
 
         <label className="flex items-start gap-3 mt-8 cursor-pointer">
           <input

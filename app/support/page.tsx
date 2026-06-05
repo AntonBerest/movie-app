@@ -4,13 +4,7 @@ import Footer from '@/components/Footer'
 import FAQ from '@/components/FAQ'
 import SupportHero from '@/components/support/SupportHero'
 
-export default async function SupportPage({
-  params,
-}: {
-  params: Promise<{ id: string }>
-}) {
-  const { id } = await params
-
+export default function SupportPage() {
   return (
     <main className="bg-zinc-950 min-h-screen">
       <Navbar />
